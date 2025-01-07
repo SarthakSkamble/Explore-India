@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #005f99;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons .btn {
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .auth-buttons .btn-primary {
+            background-color: white;
+            color: #005f99;
+            border: 2px solid #005f99;
+        }
+
+        .auth-buttons .btn-secondary {
+            background-color: #005f99;
+            color: white;
+        }
+
+        .auth-buttons .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Contact Us Section */
+        .contact-us {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .contact-us h1 {
+            font-size: 2.5em;
+            color: #005f99;
+            margin-bottom: 20px;
+        }
+
+        .contact-us p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .contact-us form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-us form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-us form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-us form input,
+        .contact-us form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-us form button {
+            background-color: #005f99;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-us form button:hover {
+            background-color: #004f82;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ExploreIndia</div>
+        <nav>
+            <ul>
+                <li><a href="frontend.html">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-secondary">Signup</button>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <p>
+            Have questions, feedback, or need assistance? We'd love to hear from you. Fill out the form below, and we'll
+            get back to you as soon as possible.
+        </p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ExploreIndia. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+
+</html>

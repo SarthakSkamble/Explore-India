@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Hidden Gems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="exploreimage.jpg">
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Welcome to Explore Hidden Gems</h1>
+            <p>Discover India's best-kept secrets and unexplored destinations.</p>
+        </div>
+    </header>
+
+    <!-- User Preferences Form -->
+    <section class="preferences">
+        <h2>Find Your Perfect Destination</h2>
+        <form action="explore.php" method="POST" class="preferences-form">
+            <label for="destination-type">What type of destination are you looking for?</label>
+            <select id="destination-type" name="destination-type" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="Adventure Escapes">Adventure Escapes</option>
+                <option value="Historical Heritage">Historical Heritage</option>
+                <option value="Nature & Wildlife">Nature & Wildlife</option>
+                <option value="Peaceful Retreats">Peaceful Retreats</option>
+                <option value="Cultural Experiences">Cultural Experiences</option>
+            </select>
+            
+            <label for="destination-type">What State you are looking for?</label>
+                <select id="destination-type" name="destination-state" required>
+                    <option>Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+            <button type="submit" name="submit" class="btn">Search</button>
+            </form>
+            
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Explore By Categories</h2>
+        <div class="category-grid">
+            <div class="category-tile adventure">
+                <h3>Adventure Escapes</h3>
+                <p>Exciting offbeat treks and experiences.</p>
+            </div>
+            <div class="category-tile heritage">
+                <h3>Historical Heritage</h3>
+                <p>Discover India's lesser-known history.</p>
+            </div>
+            <div class="category-tile nature">
+                <h3>Nature & Wildlife</h3>
+                <p>Reconnect with the wild side of India.</p>
+            </div>
+            <div class="category-tile retreats">
+                <h3>Peaceful Retreats</h3>
+                <p>Find serene and calm getaways.</p>
+            </div>
+            <div class="category-tile culture">
+                <h3>Cultural Experiences</h3>
+                <p>Immerse yourself in India's rich culture.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 Explore Hidden Gems. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

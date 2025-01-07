@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #005f99;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons .btn {
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .auth-buttons .btn-primary {
+            background-color: white;
+            color: #005f99;
+            border: 2px solid #005f99;
+        }
+
+        .auth-buttons .btn-secondary {
+            background-color: #005f99;
+            color: white;
+        }
+
+        .auth-buttons .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .about-us h1 {
+            font-size: 2.5em;
+            color: #005f99;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-us img {
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ExploreIndia</div>
+        <nav>
+            <ul>
+                <li><a href="frontend.html">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-secondary">Signup</button>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h1>About Us</h1>
+        <p>
+            Welcome to ExploreIndia, your ultimate travel companion for discovering the beauty and diversity of India.
+            Our mission is to inspire and empower travelers by providing detailed recommendations, sustainable travel
+            tips, and curated experiences tailored to your interests. From serene beaches to majestic mountains, and
+            from historical landmarks to hidden gems, we strive to make every journey memorable.
+        </p>
+        <p>
+            Our team is passionate about travel and dedicated to offering accurate and insightful information to help
+            you plan and enjoy your trips. Whether you're an adventurer, a history enthusiast, or a nature lover,
+            ExploreIndia is here to guide you every step of the way.
+        </p>
+        <img src="about-us-image.jpg" alt="Team ExploreIndia">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ExploreIndia. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+
+</html>
